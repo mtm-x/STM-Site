@@ -75,7 +75,7 @@
   </div>
 
   <div id="hospitals" class="flex p-3">
-    <div class="flex-1 w-100">
+    <div class="flex-1 w-100 overflow-x-auto">
       <table id="hospitals-table" class="table-auto bg-violet-200 rounded-xl w-[100%] text-center">
         <caption
           class="caption-top bg-violet-800 text-white rounded-tr-xl rounded-tl-xl p-3 font-bold border-b border-violet-300"
