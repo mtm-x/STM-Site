@@ -55,6 +55,11 @@
         {
             "name": "Thamarai Hospital",
             "address": "GCT Room No. 100, Coimbatore"
+        },
+        {
+            "name": "Jaswin Jesus Hospital",
+            "address": "Near Event horizon, Sagattarius A*"
         }
+
     ]
 }
