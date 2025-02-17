@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
- body {
+body {
   font-family: "Poppins";
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-main {
-  overflow: auto;
-  height: calc(100vh - 6rem);
+
+.outer-container {
+  @apply p-3
 }
 
 .nav-links {
@@ -16,4 +16,8 @@ main {
 
 .nav-toggle {
   @apply cursor-pointer bg-violet-300 text-violet-900 font-bold w-[50px] h-[50px] rounded text-2xl transition ease-in-out hover:bg-violet-900 hover:text-violet-300 md:hidden;
+}
+
+.mobile-nav {
+  @apply p-3 absolute bg-violet-950 top-[4.6rem] left-0 w-[100%] md:hidden;
 }

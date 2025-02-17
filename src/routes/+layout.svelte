@@ -16,10 +16,10 @@
 </head>
 
 <header
-  class="fixed w-[100vw] z-99 top-0 bg-violet-950 p-5 flex items-center justify-between gap-3"
+  class="fixed w-[100vw] z-99 top-0 bg-violet-950 p-3 flex items-center justify-between gap-3"
 >
-  <h3 class="text-white font-bold text-2xl">Smart Traffic Management</h3>
-  <nav>
+  <h3 class="text-white font-bold text-xl md:text-2xl">Smart Traffic Management</h3>
+  <nav class="flex flex-col">
     <div class="block md:flex gap-3 items-center">
       <button aria-label="nav-toggle" class="nav-toggle" onclick={toggleNav}>
         <i class="ri-menu-fill"></i>
@@ -38,25 +38,20 @@
           ><i class="ri-hospital-line font-normal"></i> Emergency Vehicle Detection</a
         >
       </div>
-    </div>
-
-    <div
-      class="mobile-nav absolute bg-violet-950 top-[5rem] left-0 w-[100%] md:hidden"
-      class:block={show}
-      class:hidden={!show}
-    >
-      <a href="/" class="nav-links"
-        ><i class="ri-home-6-line font-normal"></i> Home</a
-      >
-      <a href="/live" class="nav-links"
-        ><i class="ri-live-line font-normal"></i> View Live Feed</a
-      >
-      <a href="/" class="nav-links"
-        ><i class="ri-bar-chart-line font-normal"></i> View Traffic Density</a
-      >
-      <a href="/" class="nav-links"
-        ><i class="ri-hospital-line font-normal"></i> Emergency Vehicle Detection</a
-      >
+      <div class="mobile-nav" class:block={show} class:hidden={!show}>
+        <a href="/" class="nav-links" onclick={toggleNav}
+          ><i class="ri-home-6-line font-normal"></i> Home</a
+        >
+        <a href="/live" class="nav-links" onclick={toggleNav}
+          ><i class="ri-live-line font-normal"></i> View Live Feed</a
+        >
+        <a href="/" class="nav-links" onclick={toggleNav}
+          ><i class="ri-bar-chart-line font-normal"></i> View Traffic Density</a
+        >
+        <a href="/" class="nav-links" onclick={toggleNav}
+          ><i class="ri-hospital-line font-normal"></i> Emergency Vehicle Detection</a
+        >
+      </div>
     </div>
   </nav>
 </header>
