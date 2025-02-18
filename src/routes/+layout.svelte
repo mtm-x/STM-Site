@@ -16,7 +16,7 @@
 </head>
 
 <header
-  class="fixed w-[100vw] z-99 top-0 bg-violet-950 p-3 flex items-center justify-between gap-3"
+  class="fixed w-[100%] z-99 top-0 bg-violet-950 p-3 flex items-center justify-between gap-3"
 >
   <h3 class="text-white font-bold text-xl md:text-2xl">Smart Traffic Management</h3>
   <nav class="flex flex-col">

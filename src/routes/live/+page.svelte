@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<main class="relative top-[5rem] p-3">
+<main class="relative top-[5rem]">
   <div class="outer-container">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
       <div>
