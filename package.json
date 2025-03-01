@@ -27,6 +27,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"apexcharts": "^4.4.0"
+		"@sveltejs/adapter-netlify": "^4.4.1",
+		"apexcharts": "^4.4.0",
+		"dotenv": "^16.4.7"
 	}
 }

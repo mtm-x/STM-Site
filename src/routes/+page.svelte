@@ -59,7 +59,7 @@
   };
 </script>
 
-<main class="relative top-[5rem] overflow-hidden">
+<main class="relative top-[5rem]">
   <div class="outer-container">
     <div
       id="charts"
