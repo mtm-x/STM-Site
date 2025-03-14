@@ -3,7 +3,7 @@
   let imageUrl = '';
 
   async function fetchLatestImage() {
-    imageUrl = `https://return-attribute-march-mixture.trycloudflare.com/latest-image?timestamp=${new Date().getTime()}`;
+    imageUrl = `https://profound-termite-tight.ngrok-free.app/latest-image?timestamp=${new Date().getTime()}`;
   }
 
   onMount(() => {
