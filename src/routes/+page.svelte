@@ -78,12 +78,23 @@
       id="charts"
       class="flex flex-col md:flex-row gap-3 justify-center items-center"
     >
-      <div class="border border-gray-400 rounded-md max-h-[100%] max-w-[60%] flex-1 w-90 p-3">
+      <div class="border border-gray-400 rounded-md flex-1 p-3 w-[100%] order-2 md:order-1">
         <Chart options={densityData} />
+      </div>
+      <div class="border border-gray-400 rounded-md flex-1 p-3 w-[100%] order-1 md:order-2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15664.759994577202!2d76.95278305!3d11.0243671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1742032796015!5m2!1sen!2sin"
+          style="border:0;"
+          allow="fullscreen"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="map"
+          class="xl:h-[480px] lg:h-[400px] h-[300px] w-[100%]"
+        ></iframe>
       </div>
     </div>
 
-    <div id="hospitals" class="flex mt-4">
+    <!-- <div id="hospitals" class="flex mt-4">
       <div class="flex-1 w-100 overflow-x-auto">
         <table
           id="hospitals-table"
@@ -116,7 +127,8 @@
           </tbody>
         </table>
       </div>
-    </div>
+    </div> -->
+
   </div>
 </main>
 

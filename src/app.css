@@ -20,3 +20,7 @@ body {
 .mobile-nav {
   @apply p-3 absolute bg-violet-950 top-[4.6rem] left-0 w-[100%] md:hidden;
 }
+
+.credits {
+  @apply bg-violet-100 rounded-md p-3 font-bold text-lg text-violet-800 hover:text-white hover:bg-violet-800 transition-all ease-in-out
+}

@@ -63,17 +63,17 @@
 
 {@render children()}
 
-<footer class="relative top-[5rem] bg-violet-950 p-3">
+<footer class="relative bottom-[-15rem] bg-violet-950 p-5">
   <div class="flex items-center gap-4">
     <img
       src={logo}
-      class="w-[200px] h-[200px] rounded-full border-4 border-violet-500"
+      class="w-[150px] h-[150px] rounded-full border-4 border-violet-500"
       alt=""
     />
     <div>
       <h2 class="text-2xl text-white font-bold">Smart Traffic Management</h2>
       <p class="text-white">Created by:</p>
-      <ul class="text-white">
+      <ul class="text-white ms-3">
         <li>Thamaraimanalan M</li>
         <li>Jeyapranov</li>
         <li>Jaswin Kumar N R</li>
