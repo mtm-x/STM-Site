@@ -2,6 +2,9 @@
   import Chart from "$lib/Chart.svelte";
   import { density, accidents, hospitals } from "$lib/sampledata.json";
 
+  let densityTimes = $state(density.map((data) => data.time));
+  let densityNums = $state(density.map((data) => data.count));
+
   // Density Chart
   let densityData = {
     chart: {
@@ -19,12 +22,12 @@
       curve: "smooth",
     },
     xaxis: {
-      categories: density.map((data) => data.time),
+      categories: densityTimes,
     },
     series: [
       {
         name: "Traffic Density",
-        data: density.map((data) => data.count),
+        data: densityNums,
       },
     ],
   };
@@ -57,6 +60,16 @@
       },
     ],
   };
+
+  fetch("http://127.0.0.1:5000/stream")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Error Retrieving Data: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => console.log(data))
+    .catch((error) => console.error(`Error Fetching Data ${error}`));
 </script>
 
 <main class="relative top-[5rem]">
@@ -65,13 +78,11 @@
       id="charts"
       class="flex flex-col md:flex-row gap-3 justify-center items-center"
     >
-      <div class="border border-gray-400 rounded-md flex-1 w-90 p-3">
+      <div class="border border-gray-400 rounded-md max-h-[100%] max-w-[60%] flex-1 w-90 p-3">
         <Chart options={densityData} />
       </div>
-      <div class="border border-gray-400 rounded-md flex-1 w-90 p-3">
-        <Chart options={accidentsData} />
-      </div>
     </div>
+
     <div id="hospitals" class="flex mt-4">
       <div class="flex-1 w-100 overflow-x-auto">
         <table
