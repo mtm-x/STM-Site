@@ -39,7 +39,7 @@
           <i class="ri-bar-chart-line font-normal"></i> View Traffic Density
         </a>
         <a href="/about" class="nav-links">
-          <i class="ri-bar-chart-line font-normal"></i> About
+          <i class="ri-information-line font-normal"></i> About
         </a>
       </div>
 
@@ -54,7 +54,7 @@
           <i class="ri-bar-chart-line font-normal"></i> View Traffic Density
         </a>
         <a href="/about" class="nav-links" onclick={toggleNav}>
-          <i class="ri-bar-chart-line font-normal"></i> About
+          <i class="ri-information-line font-normal"></i> About
         </a>
       </div>
     </div>
@@ -63,7 +63,7 @@
 
 {@render children()}
 
-<footer class="relative bottom-[-15rem] bg-violet-950 p-5">
+<footer class="relative bottom-0 mt-28 bg-violet-950 p-5">
   <div class="flex items-center gap-4">
     <img
       src={logo}
@@ -72,8 +72,7 @@
     />
     <div>
       <h2 class="text-2xl text-white font-bold">Smart Traffic Management</h2>
-      <p class="text-white">Created by:</p>
-      <ul class="text-white ms-3">
+      <ul class="text-white">
         <li>Thamaraimanalan M</li>
         <li>Jeyapranov</li>
         <li>Jaswin Kumar N R</li>
