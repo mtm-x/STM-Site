@@ -14,4 +14,4 @@
   });
 </script>
 
-<div bind:this={chartContainer}></div>
+<div bind:this={chartContainer} class="h-[100%]"></div>

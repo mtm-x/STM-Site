@@ -24,3 +24,7 @@ body {
 .credits {
   @apply bg-violet-100 rounded-md p-3 font-bold text-lg text-violet-800 hover:text-white hover:bg-violet-800 transition-all ease-in-out
 }
+
+main {
+  @apply relative top-[5rem] min-h-[calc(100vh-15rem)]
+}
