@@ -35,8 +35,11 @@
         <a href="/live" class="nav-links">
           <i class="ri-live-line font-normal"></i> View Live Feed
         </a>
-        <a href="/" class="nav-links">
+        <a href="/density" class="nav-links">
           <i class="ri-bar-chart-line font-normal"></i> View Traffic Density
+        </a>
+        <a href="/hospitals" class="nav-links">
+          <i class="ri-hospital-line font-normal"></i> Nearby Hospitals
         </a>
         <a href="/about" class="nav-links">
           <i class="ri-information-line font-normal"></i> About
@@ -53,6 +56,9 @@
         <a href="/" class="nav-links" onclick={toggleNav}>
           <i class="ri-bar-chart-line font-normal"></i> View Traffic Density
         </a>
+        <a href="/hospitals" class="nav-links">
+          <i class="ri-hospital-line font-normal"></i> Nearby Hospitals
+        </a>
         <a href="/about" class="nav-links" onclick={toggleNav}>
           <i class="ri-information-line font-normal"></i> About
         </a>
@@ -64,14 +70,16 @@
 {@render children()}
 
 <footer class="relative bottom-0 mt-28 bg-violet-950 p-5">
-  <div class="flex items-center gap-4">
+  <div class="block sm:flex text-center sm:text-left items-center gap-4">
     <img
       src={logo}
-      class="w-[150px] h-[150px] rounded-full border-4 border-violet-500"
+      class="w-[150px] h-[150px] mx-auto sm:mx-0 rounded-full border-4 border-violet-500"
       alt=""
     />
     <div>
-      <h2 class="text-2xl text-white font-bold">Smart Traffic Management</h2>
+      <h2 class="text-2xl text-white font-bold mt-3 sm:mt-0">
+        Smart Traffic Management
+      </h2>
       <ul class="text-white">
         <li>Thamaraimanalan M</li>
         <li>Jeyapranov</li>
