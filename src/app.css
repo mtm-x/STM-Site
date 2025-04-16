@@ -26,5 +26,5 @@ body {
 }
 
 main {
-  @apply relative top-[5rem] min-h-[calc(100vh-15rem)]
+  @apply relative top-[6rem] min-h-[calc(100vh-15rem)]
 }
